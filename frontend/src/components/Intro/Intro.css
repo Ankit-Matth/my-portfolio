@@ -1,0 +1,100 @@
+#intro {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+.myPic {
+    box-shadow: 0px 2px 4px gray;
+}
+
+#hiMsg {
+    margin-bottom: 0.7rem;
+    font-size: 3.5rem;
+}
+
+#hiMsg > span {
+    font-size: 3rem;
+}
+
+h5 {
+    padding-right: 2rem;
+}
+
+.social-icons {
+    margin-top: 0.25rem;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: black;
+    margin: 0.8rem;
+    font-size: 2.6rem;
+    border-radius: 50%;
+}
+
+
+.social-icons i {
+    transition: color 0.5s ease-in-out;
+}
+
+.social-icons i:hover {
+    color: #007bff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    #hiMsg {
+        margin-top: 1.5rem;
+    }
+
+    h5 {
+        padding-right: 0rem;
+    }
+
+    .social-icons {
+        margin-bottom: 0.4rem;
+    }
+
+    #intro {
+        margin-top: 6.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .myPic {
+        width: 98% !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .social-icons {
+        margin-bottom: 0.5rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    #hiMsg {
+        font-size: 3rem;
+    }
+    
+    #hiMsg > span {
+        font-size: 2.5rem;
+    }
+    
+    h5 {
+        padding-right: 1rem;
+        font-size: 1rem;
+    }
+    
+    .social-icons {
+        margin-top: 0.1rem;
+    }
+    
+    .social-icons a {
+        font-size: 2.2rem;
+    }
+}

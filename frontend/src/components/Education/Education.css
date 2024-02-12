@@ -1,0 +1,60 @@
+#education {
+    margin-top: 3rem !important;
+}
+
+#education > h1 {
+    font-size: 3.5rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    font-family: Zilla Slab, serif;
+}
+
+.instituteName {
+    font-weight: 900;
+}
+
+.courseName {
+    font-weight: 500;
+}
+
+.startEndDates {
+    font-weight: 300;
+}
+
+.grades {
+    font-weight: 500;
+}
+
+.rightMargin {
+    margin-right: 1rem;
+}
+
+.instituteName, 
+.startEndDates,
+.courseName,
+.grades {
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 576px) {
+    .instituteName, 
+    .startEndDates,
+    .courseName,
+    .grades {
+        font-size: 0.8rem;
+        margin: 0.4rem 0;
+        padding: 0;
+    }
+
+    #accordian {
+        margin: auto 1.6rem;
+    }
+
+    #education > h1 {
+        margin-bottom: 2.5rem;
+    }
+
+    .accordionBody {
+        font-size: 0.8rem;
+    }
+}

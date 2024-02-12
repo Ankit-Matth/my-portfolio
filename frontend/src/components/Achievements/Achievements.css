@@ -1,0 +1,79 @@
+#achievements {
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+#achievementsHeading {
+    font-family: Zilla Slab, serif;
+    text-align: center;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    border: 1px solid gray;
+    border-radius: 2px;
+    background-color: #007bff;
+    color: white;
+}
+
+.achievements {
+    padding: 1rem;
+    margin: 1.5rem 0;
+    font-size: 1.57rem;
+    border: 1px solid gray;
+    border-radius: 2px;
+    background-color: #007bff;
+    color: white;
+}
+
+.achievements:hover {
+    background-color: #007bffd2;
+    cursor: pointer;
+}
+
+.achievements > i {
+    font-size: 1.4rem;
+}
+
+.achievementsLinks > a {
+    text-decoration: none;
+}
+
+#downloadBtn {
+    width: 17rem;
+    font-size: 1.25rem;
+    padding: 0.45rem;
+    box-shadow: 2px 2px 3px gray,-2px -2px 3px gray;
+}
+
+#resumePic {
+    width: 17rem;
+    border: 4px solid #007bff;
+}
+
+@media screen and (max-width: 767px) {
+    #achievements {
+        margin-top: 3rem;
+    }
+    .achievements {
+        font-size: 1.3rem;
+    }
+    #resumePic {
+        width: 90%;
+        border: 2px solid #007bff;
+    }
+    #downloadBtn {
+        width: 90%;
+        margin-top: 1.25rem !important;
+    }
+    .resumeBox {
+        align-items: center !important;
+    }
+    .achievementsLinks {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .achievements {
+        font-size: 1.2rem;
+    }
+}

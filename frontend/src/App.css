@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+html {
+  font-size: 100%;
+}
+
+@media screen and (min-width: 1450px) {
+  html {
+      font-size: 240%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+      font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+      font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+      font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+      font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+      font-size: 50%;
+  }
+}

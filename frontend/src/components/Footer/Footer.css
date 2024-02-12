@@ -1,0 +1,62 @@
+#footer {
+    background-color: black;
+    color: white;
+    margin-top: 3rem;
+}
+
+.interestedText {
+    font-size: 2.7rem;
+}
+
+.emailText span {
+    color: #ffc800;
+}
+
+.footer-icons a {
+    text-decoration: none;
+    color: white;
+    margin: 0 0.7rem;
+    font-size: 2rem;
+}
+
+
+.footer-icons i {
+    transition: color 0.5s ease-in-out;
+}
+
+.footer-icons i:hover {
+    color: #ffc800;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 575px) {
+    .interestedText {
+        font-size: 1.5rem;
+    }
+    
+    .emailText {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-icons a {
+        font-size: 2.5rem;
+        margin-top: 0;
+    }
+
+    #connectWithMe {
+        font-size: 2.3rem;
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .interestedText {
+        font-size: 2rem;
+    }
+    
+    .emailText {
+        font-size: 1.2rem;
+    }
+}

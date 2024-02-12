@@ -1,0 +1,29 @@
+#contact > h1 {
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    font-family: Zilla Slab, serif;
+}
+
+#form {
+    font-weight: 500;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.inputBoxes {
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+
+#submit {
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 2px 2px 4px gray;
+}
+
+@media screen and (max-width: 768px) {
+    #contact > h1 {
+        margin-bottom: 2.5rem;
+        font-size: 4rem;
+    }
+}

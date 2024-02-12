@@ -1,0 +1,109 @@
+#brandName {
+    font-family: Zilla Slab, serif;
+    letter-spacing: 0.5px;
+    font-size: 1.8rem;
+}
+
+#brandName span {
+    position: relative;
+    padding-bottom: 0px;
+}
+
+#brandName span::after {
+    content: "";
+    position: absolute;
+    bottom: 0.1rem;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+    height: 0.18rem;
+    background-color: #000;
+}
+
+#navBar {
+    font-size: 1.1rem;
+    background-color: aqua;
+    padding: 1.2rem 1.6rem;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#nav>* {
+    font-weight: bold;
+    margin-left: 1rem;
+    border-bottom: 2px solid aqua;
+    border-radius: 3px;
+}
+
+#nav>*:hover {
+    border-bottom: 2px solid black;
+}
+
+.navBarShadow {
+    box-shadow: 2px 4px 5px rgba(128, 128, 128, 0.753);
+    transition: all 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+    #nav>* {
+        padding-bottom: 1.5px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #basic-navbar-nav {
+        margin-top: 0.7rem;
+        border: 1px solid black;
+    }
+
+    #nav>* {
+        border-radius: 0;
+        border-bottom: 1px solid black;
+        margin-left: 0;
+    }
+
+    #nav>*:hover {
+        background-color: rgba(128, 128, 128, 0.37);
+        border-bottom: 1px solid black;
+    }
+
+    #nav :last-child {
+        border-bottom: none;
+    }
+
+    #navBar {
+        padding: 1.2rem 1rem;
+    }
+
+    .navBarShadow {
+        box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.753);
+        transition: all 0.3s;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #navBar {
+        padding: 1.2rem 0.9rem;
+    }
+
+    #brandName span::after {
+        bottom: 0.08rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #brandName span::after {
+        bottom: 0.04rem;
+        height: 0.156rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #brandName span::after {
+        bottom: 0.05rem;
+        height: 0.15rem;
+    }
+}
