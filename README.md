@@ -4,8 +4,7 @@
 
 ## Quick Demo
 
-- **Live link** - https://my-portfolio.vercel.app/
-
+- **Live link** - https://my-portfolio-nine-rouge-93.vercel.app/
 
 ## Technologies Used
 
