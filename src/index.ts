@@ -19,6 +19,8 @@ mongoose.connect('mongodb+srv://ankitmatth:myPortfolio@cluster0.abovzon.mongodb.
   console.error("Error connecting to MongoDB:", e);
 });
 
+app.use(express.static(path.resolve(__dirname, '..', 'frontend', 'build')));
+
 app.post('/submit', async (req, res) => {
   try {
     const { firstName, lastName, email, phone, message } = req.body;
@@ -40,14 +42,12 @@ app.post('/submit', async (req, res) => {
   }
 });
 
-app.get("/", (req, res) => {
-  app.use(express.static(path.resolve(__dirname, '..', 'frontend', 'build')));
+app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, '..', 'frontend', 'build', 'index.html'));
-});  
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
 
-// Export the Express API
 module.exports = app;
