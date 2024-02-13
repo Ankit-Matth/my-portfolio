@@ -34,7 +34,7 @@ const Achievements: React.FC<AchievementsProps> = ({ isFluid }) => {
 
         <Col md={4} sm={12} className="d-flex flex-column align-items-start justify-content-start resumeBox">
           <Image src={myResume} className='rounded' id='resumePic'/>
-          <Button variant="primary" href='https://drive.google.com/uc?export=download&id=1WPHWiEI3-X4MkoP_Q83RBFEF7F1NLmbS' className='mt-2' id='downloadBtn'>Download Resume</Button>
+          <Button variant="primary" href='https://drive.google.com/uc?export=download&id=1yAx5OR_ajnC5BcSfjyCIwy9BLZ9_CZlu' className='mt-2' id='downloadBtn'>Download Resume</Button>
         </Col>
       </Row>
     </Container>

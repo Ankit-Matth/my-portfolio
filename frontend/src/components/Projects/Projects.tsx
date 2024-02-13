@@ -46,7 +46,7 @@ const projectsData = [
   {
     cardTitle: "My Portfolio",
     projectImg: MyPortfolio,
-    liveLink: "https://my-portfolio.vercel.app/",
+    liveLink: "https://ankit-matth-portfolio.vercel.app/",
     sourceCode: "https://github.com/Ankit-Matth/my-portfolio"
   }
 ];
