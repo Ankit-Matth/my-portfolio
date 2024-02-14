@@ -6,12 +6,13 @@ import path from "path";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const MONGO_URI = process.env.MONGODB_URI || 'mongodb+srv://ankitmatth:myPortfolio@cluster0.abovzon.mongodb.net/myPortfolio';
 
 app.use(express.json());
 app.use(cors());
 
 // Connect to MongoDB Atlas
-mongoose.connect('mongodb+srv://ankitmatth:myPortfolio@cluster0.abovzon.mongodb.net/myPortfolio')
+mongoose.connect(MONGO_URI)
 .then(() => { 
   console.log("Database connected.");
 })
