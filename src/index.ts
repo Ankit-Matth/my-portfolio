@@ -11,13 +11,18 @@ app.use(express.json());
 app.use(cors());
 
 // Connect to MongoDB Atlas
-mongoose.connect('mongodb+srv://ankitmatth:myPortfolio@cluster0.abovzon.mongodb.net/myPortfolio?retryWrites=true&w=majority')
-.then(() => { 
-  console.log("Database connected.");
-})
-.catch((e) => {
-  console.error("Error connecting to MongoDB:", e);
-});
+const connectMongoDB = async () => {
+  try {
+    await mongoose.connect('mongodb+srv://ankitmatth:myPortfolio@cluster0.abovzon.mongodb.net/myPortfolio?retryWrites=true&w=majority')
+    .then(() => { 
+      console.log("Database connected.");
+    })
+  } catch (error) {
+    console.error("Error connecting to MongoDB:", error);
+  }
+}
+
+connectMongoDB();
 
 app.use(express.static(path.resolve(__dirname, '..', 'frontend', 'build')));
 
