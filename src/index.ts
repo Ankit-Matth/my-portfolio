@@ -1,7 +1,7 @@
-import express from 'express';
+import express, { Request, Response, NextFunction } from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
-import Contact, { IContact } from './model/contact';
+import Contact from './model/contact';
 import path from "path";
 
 const app = express();
@@ -10,23 +10,29 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cors());
 
-// Connect to MongoDB Atlas
+// Function to connect to MongoDB with retry mechanism
 const connectMongoDB = async () => {
   try {
-    await mongoose.connect('mongodb+srv://ankitmatth:myPortfolio@cluster0.abovzon.mongodb.net/myPortfolio?retryWrites=true&w=majority')
-    .then(() => { 
-      console.log("Database connected.");
-    })
+    await mongoose.connect('mongodb+srv://ankitmatth:myPortfolio@cluster0.abovzon.mongodb.net/myPortfolio?retryWrites=true&w=majority');
+    console.log("Database connected.");
   } catch (error) {
     console.error("Error connecting to MongoDB:", error);
+    // Retry connection after 1 seconds
+    setTimeout(connectMongoDB, 1000);
   }
 }
 
 connectMongoDB();
 
-app.use(express.static(path.resolve(__dirname, '..', 'frontend', 'build')));
+// Middleware to check MongoDB connection before processing /submit
+const checkMongoDBConnection = async (req: Request, res: Response, next: NextFunction) => {
+  if (mongoose.connection.readyState !== 1) {
+    await connectMongoDB();
+  }
+  next();
+}
 
-app.post('/submit', async (req, res) => {
+app.post('/submit', checkMongoDBConnection, async (req: Request, res: Response) => {
   try {
     const { firstName, lastName, email, phone, message } = req.body;
 
@@ -47,7 +53,9 @@ app.post('/submit', async (req, res) => {
   }
 });
 
-app.get("*", (req, res) => {
+app.use(express.static(path.resolve(__dirname, '..', 'frontend', 'build')));
+
+app.get("*", (req: Request, res: Response) => {
   res.sendFile(path.resolve(__dirname, '..', 'frontend', 'build', 'index.html'));
 });
 
