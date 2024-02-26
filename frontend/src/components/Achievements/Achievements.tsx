@@ -17,6 +17,9 @@ const Achievements: React.FC<AchievementsProps> = ({ isFluid }) => {
         <Col md={8} sm={12} style={{ textAlign: 'left' }} className="d-flex align-items-start justify-content-center">
          <div className='achievementsLinks'>
               <h1 id='achievementsHeading'>My Achievements</h1>
+              <a href="https://www.linkedin.com/posts/ankit-matth_webwizards-1st-frontend-activity-7166456689557225472-hyeJ?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
+                  <h3 className='achievements'><i className="fa-solid fa-arrow-right"></i>&nbsp; Got 1st position in hackUniv.</h3>
+              </a>
               <a href="https://www.linkedin.com/posts/ankit-matth_hacktoberfest2023-activity-7147959854362427392-N680?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
                   <h3 className='achievements'><i className="fa-solid fa-arrow-right"></i>&nbsp; Got a cool T-shirt from DocsGPT.</h3> 
               </a>
@@ -25,9 +28,6 @@ const Achievements: React.FC<AchievementsProps> = ({ isFluid }) => {
               </a>
               <a href="https://www.linkedin.com/posts/ankit-matth_hacktoberfest2023-hacktoberfestabr2023-hacktoberfest-activity-7125144823749050369-M1Al?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
                   <h3 className='achievements'><i className="fa-solid fa-arrow-right"></i>&nbsp; Completed Hacktoberfest 2023 with 10 PRs. </h3>
-              </a>
-              <a href="https://www.linkedin.com/posts/ankit-matth_hacktoberfest2023-opensource-sustainability-activity-7125119259998916609-Y1yZ?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
-                  <h3 className='achievements'><i className="fa-solid fa-arrow-right"></i>&nbsp; A Tree was planted for me by Hacktoberfest.</h3>
               </a>
           </div>
         </Col>
