@@ -26,7 +26,7 @@ const projectsData = [
     sourceCode: "https://github.com/Ankit-Matth/my-toDo-list"
   },
   {
-    cardTitle: "Tic Tac Toe",
+    cardTitle: "Multiplayer Tic-Tac-Toe",
     projectImg: TicTacToe,
     liveLink: "https://ankit-matth.github.io/tic-tac-toe/",
     sourceCode: "https://github.com/Ankit-Matth/tic-tac-toe"

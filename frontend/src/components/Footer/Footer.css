@@ -12,19 +12,36 @@
     color: #ffc800;
 }
 
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
 .footer-icons a {
     text-decoration: none;
     color: white;
-    margin: 0 0.7rem;
+    margin-right: 1.1rem;
     font-size: 2rem;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 
 .footer-icons i {
     transition: color 0.5s ease-in-out;
+    font-size: inherit;
 }
 
-.footer-icons i:hover {
+.footer-icons svg {
+    transition: color 0.5s ease-in-out;
+    width: 2rem; 
+    height: 2rem;
+}
+
+.footer-icons i:hover, .footer-icons svg:hover {
     color: #ffc800;
     cursor: pointer;
 }

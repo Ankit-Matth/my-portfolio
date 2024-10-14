@@ -11,7 +11,7 @@ import expressPic from '../images/skills/express.png';
 import reactPic from '../images/skills/react.png';
 import nodePic from '../images/skills/node.png';
 import typescriptPic from '../images/skills/typescript.png';
-import versionControlPic from '../images/skills/versionControl.png';
+import cPlusPlusPic from '../images/skills/Cplusplus.png';
 import devToolsPic from '../images/skills/devTools.png';
 import testingPic from '../images/skills/testing.png';
 import Skill from './skill';
@@ -36,7 +36,7 @@ const Skills: React.FC<SkillsProps> = ({ isFluid }) => {
         <Skill skillImg={nodePic}/>
      
         <Skill skillImg={typescriptPic}/>
-        <Skill skillImg={versionControlPic}/>
+        <Skill skillImg={cPlusPlusPic}/>
         <Skill skillImg={devToolsPic}/>
         <Skill skillImg={testingPic}/>
       </Row>

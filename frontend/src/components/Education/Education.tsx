@@ -25,11 +25,11 @@ const Education: React.FC<EducationProps> = ({ isFluid }) => {
                         <h3 className='instituteName'>BRCM College of Engineering & Technology, Bahal</h3>
                         <h4 className='courseName'>Bachelor of Technology - BTech, Computer Science</h4>
                         <h5 className='startEndDates'>Oct 2021 - Present (Expected : May 2025)</h5>
-                        <h6 className='grades'>Grade: Current CGPA - 8.87, (80.69%)</h6>
+                        <h6 className='grades'>Grade: Current CGPA - 8.89, (80.87%)</h6>
                     </div>
                 </Accordion.Header>
                 <Accordion.Body style={{textAlign: 'left'}}>
-                    <h6 className='accordionBody'>👉 Currently, I am pursuing my 6th Semester.</h6> 
+                    <h6 className='accordionBody'>👉 Currently, I am pursuing my 7th Semester.</h6> 
                 </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">

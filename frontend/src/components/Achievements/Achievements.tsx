@@ -18,7 +18,7 @@ const Achievements: React.FC<AchievementsProps> = ({ isFluid }) => {
          <div className='achievementsLinks'>
               <h1 id='achievementsHeading'>My Achievements</h1>
               <a href="https://www.linkedin.com/posts/ankit-matth_webwizards-1st-frontend-activity-7166456689557225472-hyeJ?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
-                  <h3 className='achievements'><i className="fa-solid fa-arrow-right"></i>&nbsp; Got 1st position in hackUniv.</h3>
+                  <h3 className='achievements'><i className="fa-solid fa-arrow-right"></i>&nbsp; Got 1st position in HackUniv 2024.</h3>
               </a>
               <a href="https://www.linkedin.com/posts/ankit-matth_hacktoberfest2023-activity-7147959854362427392-N680?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
                   <h3 className='achievements'><i className="fa-solid fa-arrow-right"></i>&nbsp; Got a cool T-shirt from DocsGPT.</h3> 

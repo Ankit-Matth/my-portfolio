@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = ({ setActiveNavItem }) => {
     const handleScroll = () => {
       const threshold = window.innerHeight / 2; // Threshold for determining if section is in the middle
       const scrollY = window.scrollY;
-      setIsScrolled(scrollY >= threshold);
+      setIsScrolled(scrollY >= threshold/5);
   
       const introSection = document.getElementById('intro');
       const skillsSection = document.getElementById('skills');

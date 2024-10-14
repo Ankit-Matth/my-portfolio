@@ -22,22 +22,35 @@ h5 {
 
 .social-icons {
     margin-top: 0.25rem;
+    display: flex;
+    gap: 0;
 }
 
 .social-icons a {
     text-decoration: none;
     color: black;
-    margin: 0.8rem;
+    margin: 0.25rem;
+    margin-right: 0.7rem;
     font-size: 2.6rem;
     border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 
 .social-icons i {
     transition: color 0.5s ease-in-out;
+    font-size: inherit;
 }
 
-.social-icons i:hover {
+.social-icons svg {
+    transition: color 0.5s ease-in-out;
+    width: 2rem; 
+    height: 2rem;
+}
+
+.social-icons i:hover, .social-icons svg:hover {
     color: #007bff;
     cursor: pointer;
 }
