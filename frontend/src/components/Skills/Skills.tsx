@@ -14,6 +14,10 @@ import typescriptPic from '../images/skills/typescript.png';
 import cPlusPlusPic from '../images/skills/Cplusplus.png';
 import devToolsPic from '../images/skills/devTools.png';
 import testingPic from '../images/skills/testing.png';
+import mysqlPic from '../images/skills/mysql.png';
+import dsaPic from '../images/skills/dsa.png';
+import webSocketPic from '../images/skills/webSocket.png';
+import deploymentPic from '../images/skills/deployment.png';
 import Skill from './skill';
 
 interface SkillsProps {
@@ -34,11 +38,16 @@ const Skills: React.FC<SkillsProps> = ({ isFluid }) => {
         <Skill skillImg={expressPic}/>
         <Skill skillImg={reactPic}/>
         <Skill skillImg={nodePic}/>
-     
+
         <Skill skillImg={typescriptPic}/>
+        <Skill skillImg={mysqlPic}/>
         <Skill skillImg={cPlusPlusPic}/>
+        <Skill skillImg={dsaPic}/>
+     
+        <Skill skillImg={webSocketPic}/>
         <Skill skillImg={devToolsPic}/>
         <Skill skillImg={testingPic}/>
+        <Skill skillImg={deploymentPic}/>
       </Row>
     </Container>
   );

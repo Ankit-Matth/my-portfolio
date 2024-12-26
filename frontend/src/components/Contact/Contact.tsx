@@ -89,7 +89,7 @@ const Contact: React.FC<ContactProps> = ({ isFluid }) => {
           <Modal.Title>Submission Successful</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h6>Your data has been submitted successfully. I will contact you soon.</h6>
+          <h6>Your message has been submitted successfully. I will get back to you shortly.</h6>
         </Modal.Body>
       </Modal>
     </Container>
