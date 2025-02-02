@@ -29,7 +29,7 @@ const Education: React.FC<EducationProps> = ({ isFluid }) => {
                     </div>
                 </Accordion.Header>
                 <Accordion.Body style={{textAlign: 'left'}}>
-                    <h6 className='accordionBody'>👉 Currently, I am pursuing my 7th Semester.</h6> 
+                    <h6 className='accordionBody'>👉 Currently, I am pursuing my 8th Semester.</h6> 
                 </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
