@@ -1,10 +1,13 @@
 import express, { Request, Response, NextFunction } from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
+import dotenv from "dotenv";
 import Contact from './model/contact';
 import path from "path";
 
 const app = express();
+dotenv.config(); // Load environment variables
+
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
@@ -13,7 +16,7 @@ app.use(cors());
 // Function to connect to MongoDB with retry mechanism
 const connectMongoDB = async () => {
   try {
-    await mongoose.connect('mongodb+srv://ankitmatth:myPortfolio@cluster0.abovzon.mongodb.net/myPortfolio?retryWrites=true&w=majority');
+    await mongoose.connect(process.env.MONGO_URL);
     console.log("Database connected.");
   } catch (error) {
     console.error("Error connecting to MongoDB:", error);

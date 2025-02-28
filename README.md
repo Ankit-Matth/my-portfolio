@@ -17,39 +17,3 @@ https://github.com/Ankit-Matth/my-portfolio/assets/146843890/e460b3e9-2768-4300-
 3. Typescript Syntax Extension, React-Bootstrap
 
 Building this project felt like going on a coding adventure where each line of code taught me something new. I mainly concentrated on TypeScript, which helped me understand things like managing different types of events and components in React. Overall, this project wasn't just about writing code; it was a practical learning experience that really helped me grow as a web developer.
-
-## Getting Started 
-
-**Note:** *Make sure Node.js (npm) is installed before proceeding.*
-
-Follow the steps below to install and run the project on your local machine.
-
-**1. Clone this repository:**
-  ```bash
-  git clone https://github.com/Ankit-Matth/my-portfolio.git
-  ```
-**2. Go to the project directory:**
-  ```bash
-  cd my-portfolio
-  ```
-**3. Install all dependencies for backend:**
-  ```bash
-  npm install
-  ```
-**4. Navigate to frontend:**
-  ```bash
-  cd frontend
-  ```
-**5. Install all dependencies:**
-  ```bash
-  npm install
-  ```
-**6. Navigate back to my-portfolio directory:**
-  ```bash
-  cd ..
-  ```
-**7. Start development server:**
-  ```bash
-  npm start
-  ```
-**8. Visit `http://localhost:3000` to see the magic.**
