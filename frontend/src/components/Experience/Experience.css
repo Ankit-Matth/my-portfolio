@@ -1,0 +1,61 @@
+#experience {
+  margin: 4rem auto !important;
+}
+
+#experience > h1 {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  font-family: "Zilla Slab", serif;
+  font-weight: bold;
+  text-align: center;
+  color: #111;
+}
+
+.experience-card {
+  border-radius: 1rem;
+  padding: 2rem;
+  background: #fff;
+  text-align: left;
+}
+
+.experience-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.date {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #6c757d;
+  margin-bottom: 1.2rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.experience-img {
+  width: 100%;
+  border-radius: 0.75rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.live-link-btn {
+  font-weight: 600;
+  padding: 0.7rem 1.8rem;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  background: linear-gradient(90deg, #007bff, #0056d2);
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.live-link-btn:hover {
+  background: linear-gradient(90deg, #0056d2, #0041a8);
+  transform: translateY(-2px);
+}

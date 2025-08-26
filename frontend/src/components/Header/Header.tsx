@@ -19,6 +19,7 @@ const Header: React.FC<HeaderProps> = ({ setActiveNavItem }) => {
       setIsScrolled(scrollY >= threshold/5);
   
       const introSection = document.getElementById('intro');
+      const experienceSection = document.getElementById('experience');
       const skillsSection = document.getElementById('skills');
       const projectsSection = document.getElementById('projects');
       const educationSection = document.getElementById('education');
@@ -39,6 +40,8 @@ const Header: React.FC<HeaderProps> = ({ setActiveNavItem }) => {
   
       if (introSection && scrollY >= introSection.offsetTop - threshold && scrollY < introSection.offsetTop + introSection.offsetHeight - threshold) {
         setActiveNavItem('intro');
+      } else if (experienceSection && scrollY >= experienceSection.offsetTop - threshold && scrollY <     experienceSection.offsetTop + experienceSection.offsetHeight - threshold) {
+        setActiveNavItem('experience');
       } else if (skillsSection && scrollY >= skillsSection.offsetTop - threshold && scrollY < skillsSection.offsetTop + skillsSection.offsetHeight - threshold) {
         setActiveNavItem('skills');
       } else if (projectsSection && scrollY >= projectsSection.offsetTop - threshold && scrollY < projectsSection.offsetTop + projectsSection.offsetHeight - threshold) {
@@ -88,7 +91,7 @@ const Header: React.FC<HeaderProps> = ({ setActiveNavItem }) => {
     <Navbar expand="md" id="navBar" className={isScrolled ? 'navBarShadow' : ''} expanded={isNavbarExpanded}>
       <Container fluid>
         <Navbar.Brand href="#intro" onClick={handleNavClick} id="brandName">
-          @<span>AnkitMatth</span>
+          @{<span>AnkitMatth</span>}
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ border: '1px solid black' }}
@@ -99,6 +102,12 @@ const Header: React.FC<HeaderProps> = ({ setActiveNavItem }) => {
             <Nav.Link href="#intro" onClick={handleNavClick} active>
               Intro
             </Nav.Link>
+            <Nav.Link href="#experience" onClick={handleNavClick}>
+              Experience
+            </Nav.Link>
+            <Nav.Link href="#achievements" onClick={handleNavClick}>
+              Achievements
+            </Nav.Link>
             <Nav.Link href="#skills" onClick={handleNavClick}>
               Skills
             </Nav.Link>
@@ -107,9 +116,6 @@ const Header: React.FC<HeaderProps> = ({ setActiveNavItem }) => {
             </Nav.Link>
             <Nav.Link href="#education" onClick={handleNavClick}>
               Education
-            </Nav.Link>
-            <Nav.Link href="#achievements" onClick={handleNavClick}>
-              Achievements
             </Nav.Link>
             <Nav.Link href="#contact" onClick={handleNavClick}>
               Contact

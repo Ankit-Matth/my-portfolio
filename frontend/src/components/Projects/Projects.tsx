@@ -3,12 +3,12 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import './Projects.css';
 
-import Calculator from '../images/projects/calculator.jpg';
-import ToDoList from '../images/projects/toDoList.jpg';
-import TicTacToe from '../images/projects/ticTacToe.jpg';
-import MazeEscape from '../images/projects/mazeEscape.jpg';
-import PersonalDoctor from '../images/projects/personalDoctor.png';
-import MyPortfolio from '../images/projects/myPortfolio.png';
+import Calculator from '../../images/projects/calculator.jpg';
+import ToDoList from '../../images/projects/toDoList.jpg';
+import TicTacToe from '../../images/projects/ticTacToe.jpg';
+import MazeEscape from '../../images/projects/mazeEscape.jpg';
+import PersonalDoctor from '../../images/projects/personalDoctor.png';
+import MyPortfolio from '../../images/projects/myPortfolio.png';
 
 import Project from './project';
 

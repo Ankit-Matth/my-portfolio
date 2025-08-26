@@ -57,12 +57,12 @@ const Contact: React.FC<ContactProps> = ({ isFluid }) => {
           </Row>
 
           <Row>
-            <Col>
+            <Col sm={12} md={6}>
               <FloatingLabel controlId="floatingInput" label="Email address" className="mb-3 inputBoxes">
                   <Form.Control type="email" placeholder="name@example.com" name="email" required />
               </FloatingLabel>
             </Col>
-            <Col>
+            <Col sm={12} md={6}>
               <FloatingLabel controlId="floatingPhone" label="Phone No" className="mb-3 inputBoxes">
                   <Form.Control type="tel" placeholder="Phone No" name="phone" required />
               </FloatingLabel>

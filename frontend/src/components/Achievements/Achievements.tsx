@@ -1,44 +1,103 @@
-import Image from 'react-bootstrap/Image';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import myResume from '../images/achievements/myResume.png';
-import './Achievements.css';
+import React from "react";
+import Container from "react-bootstrap/Container";
+import "./Achievements.css";
 
 interface AchievementsProps {
   isFluid: boolean;
 }
 
+const educationData = [
+  {
+    year: "2021 - 2025",
+    title: "High School Degree",
+    subtitle: "Completed high school with focus on science and mathematics, achieving 95% marks. Participated in various extracurricular activities and won several awards.",
+    details: "Computer Science"
+  },
+  {
+    year: "2019 - 2021", 
+    title: "Bachelor's Degree",
+    subtitle: "Pursued undergraduate degree in engineering with specialization in computer science. Maintained excellent academic record throughout.",
+    details: "Engineering"
+  },
+  {
+    year: "2017 - 2019",
+    title: "Master's Degree", 
+    subtitle: "Advanced studies in computer engineering with focus on software development and system design principles.",
+    details: "Computer Engineering"
+  }
+];
+
+const experienceData = [
+  {
+    year: "2023 - Present",
+    title: "UI/UX Designer",
+    subtitle: "Working as UI/UX designer creating intuitive and user-friendly interfaces for web and mobile applications with modern design principles.",
+    details: "Design & Development"
+  },
+  {
+    year: "2022 - 2023",
+    title: "Full-Stack Developer", 
+    subtitle: "Developed and maintained full-stack web applications using modern technologies and frameworks for various client projects.",
+    details: "Web Development"
+  },
+  {
+    year: "2021 - 2022",
+    title: "Frontend Developer",
+    subtitle: "Specialized in frontend development creating responsive and interactive user interfaces using React, Vue.js and modern CSS frameworks.",
+    details: "Frontend Development"
+  }
+];
+
 const Achievements: React.FC<AchievementsProps> = ({ isFluid }) => {
   return (
-    <Container id='achievements' fluid={isFluid} className={isFluid ? 'px-5' : ''}> 
-      <Row>
-        <Col md={8} sm={12} style={{ textAlign: 'left' }} className="d-flex align-items-start justify-content-center">
-         <div className='achievementsLinks'>
-              <h1 id='achievementsHeading'>My Achievements</h1>
-              <a href="https://www.linkedin.com/posts/ankit-matth_webwizards-1st-frontend-activity-7166456689557225472-hyeJ?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
-                  <h3 className='achievements'><i className="fa-solid fa-arrow-right"></i>&nbsp; Got 1st position in HackUniv 2024.</h3>
-              </a>
-              <a href="https://www.linkedin.com/posts/ankit-matth_hacktoberfest2023-activity-7147959854362427392-N680?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
-                  <h3 className='achievements'><i className="fa-solid fa-arrow-right"></i>&nbsp; Got a cool T-shirt from DocsGPT.</h3> 
-              </a>
-              <a href="https://www.linkedin.com/posts/ankit-matth_winner-of-c-language-quiz-activity-7057662549986603008-T_0c?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
-                  <h3 className='achievements'><i className="fa-solid fa-arrow-right"></i>&nbsp; Got 1st position in C language quiz.</h3>
-              </a>
-              <a href="https://www.linkedin.com/posts/ankit-matth_hacktoberfest2023-hacktoberfestabr2023-hacktoberfest-activity-7125144823749050369-M1Al?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
-                  <h3 className='achievements'><i className="fa-solid fa-arrow-right"></i>&nbsp; Completed Hacktoberfest 2023 with 10 PRs. </h3>
-              </a>
+    <Container id="achievements" fluid={isFluid} className={isFluid ? "px-5" : ""}>
+      <h1 id="achievementsHeading">My Achievements</h1>
+      
+      <div className="timeline-wrapper">
+        {/* Education Section */}
+        <div className="timeline-section">
+          <h2 className="section-title education-title">EDUCATION</h2>
+          <div className="timeline-container">
+            <div className="timeline-line"></div>
+            {educationData.map((item, index) => (
+              <div key={index} className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <div className="timeline-year">{item.year}</div>
+                  <div className="achievement-card">
+                    <h3 className="achievement-title">{item.title}</h3>
+                    <p className="achievement-subtitle">{item.subtitle}</p>
+                    <span className="achievement-details">{item.details}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-        </Col>
+        </div>
 
-        <Col md={4} sm={12} className="d-flex flex-column align-items-start justify-content-start resumeBox">
-          <Image src={myResume} className='rounded' id='resumePic'/>
-          <Button variant="primary" href='https://drive.google.com/drive/folders/1XEY9ihwjkKuCjVpPRHKUDBeM-K9oX5iz?usp=drive_link' target='_blank' className='mt-2' id='downloadBtn'>Download Resume</Button>
-        </Col>
-      </Row>
+        {/* Experience Section */}
+        <div className="timeline-section">
+          <h2 className="section-title experience-title">EXPERIENCE</h2>
+          <div className="timeline-container">
+            <div className="timeline-line"></div>
+            {experienceData.map((item, index) => (
+              <div key={index} className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <div className="timeline-year">{item.year}</div>
+                  <div className="achievement-card">
+                    <h3 className="achievement-title">{item.title}</h3>
+                    <p className="achievement-subtitle">{item.subtitle}</p>
+                    <span className="achievement-details">{item.details}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </Container>
   );
-}
+};
 
 export default Achievements;

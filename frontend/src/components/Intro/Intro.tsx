@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import myPic from '../images/myPic.jpg';
+import myPic from '../../images/myPic.jpg';
 import './Intro.css';
 
 interface IntroProps {
@@ -19,8 +19,8 @@ const Intro: React.FC<IntroProps> = ({ isFluid }) => {
 
           <Col sm={7} xs={12} style={{textAlign: 'left'}} className="d-flex flex-column justify-content-center order-sm-1">
                 <h1 id='hiMsg'>Hello<span>&#x1F44B;</span>, <br />I'm Ankit Matth</h1>
-                <h5 className="text-justify">&#x1F393;A final year Computer Science Engineering student at BRCM College of Engineering and Technology, Bahal. And an enthusiastic tech lover on a mission to dive deeper into Full Stack Development.&#x1F4BB;</h5>
-                <h5 className='mt-2 mb-2'>&#x1F449; Let's connect and create something extraordinary! &#128640;&#x1F3AF;</h5>
+                <h5 className="text-justify">&#x1F393;An AI-focused Full Stack Engineer, open source contributor, freelance developer, and BTech CSE &rsquo;25 graduate with the vision to make a big impact in the tech community. &#127760;&#x1F4BB;</h5>
+                <h5 className='mt-2 mb-2'>&#x1F449;Let's connect and create something extraordinary! &#128640;&#x1F3AF;</h5>
                 <div className="social-icons">
                     <a href="https://github.com/Ankit-Matth" target="_blank" rel="noopener noreferrer" style={{marginLeft: '0'}}>
                       <i className="fab fa-square-github"></i>

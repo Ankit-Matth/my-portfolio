@@ -1,40 +1,45 @@
 #skills {
-    padding: 5px;
+    margin: 5rem auto;
 }
 
-#skills > h1 {
-    font-size: 4rem;
-    margin-bottom: 5rem;
+#skills h1 {
+    font-size: 5rem;
     font-family: Zilla Slab, serif;
+    text-align: left;
 }
 
-.skillsImg {
-    border: 2px solid #dee2e6;
+#skills p {
+    text-align: justify;
+    padding-right: 3rem;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 
-.skillsImg:hover {
-    border: 6px solid;
-    cursor: pointer;
-    animation: animateBorder 0.8s infinite ease-in-out;
+#skills a {
+    width: fit-content;
+    text-decoration: none;
+    width: 15rem;
 }
-  
-@keyframes animateBorder {
-    0% {
-        border-image: linear-gradient(to top,#0000ff, #ff0000, #00ff00);
-        border-image-slice: 1; 
-    }
-    25% {
-        border-image: linear-gradient(to right,#0000ff, #ff0000, #00ff00);
-        border-image-slice: 1; 
-    }
-    50% {
-        border-image: linear-gradient(to bottom,#0000ff, #ff0000, #00ff00);
-        border-image-slice: 1;  
-    }
-    100% {
-        border-image: linear-gradient(to left,#0000ff, #ff0000, #00ff00);
-        border-image-slice: 1;
-    }
+
+.skills-container {
+  position: relative;
+  width: 90%;
+  max-width: 90%;
+  aspect-ratio: 1.1;
+  overflow: hidden;
+  border-radius: 12px;
+  background: radial-gradient(circle at 50% 50%, #ffffff 0%, #f3f4f6 100%);
+  touch-action: none;
+}
+
+.skill {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: center;
+  backface-visibility: hidden;
+  cursor: pointer;
+  user-select: none;
 }
 
 @media screen and (max-width: 425px) {
@@ -42,11 +47,18 @@
         padding-top: 0;
     }
 
-    #skills > h1 {
-        margin-bottom: 4rem;
+    #skills h1 {
+        text-align: center;
     }
 
-    .skillsImg:hover {
-        border: 3px solid;
+    #skills p {
+        text-align: justify;
+        padding: 0 18px;
+        margin-bottom: 8px;
+    }
+
+    .skills-container {
+        aspect-ratio: 1;
+        margin-top: 20px;
     }
 }

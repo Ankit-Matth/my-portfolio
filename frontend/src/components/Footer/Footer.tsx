@@ -34,7 +34,7 @@ function Footer () {
         </Row>
         <Row className="p-2 pt-4">
     <Col><h6 className="copyright">&copy; All Rights Reserved</h6></Col>
-    <Col><h6 className="credit">Designed by <span style={{color: '#ffc800'}}>Ankit Matth</span></h6></Col>
+    <Col><h6 className="credit">Developed by <span style={{color: '#ffc800'}}>Ankit Matth</span></h6></Col>
 </Row>
 
       </Container>

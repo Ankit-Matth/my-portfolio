@@ -8,6 +8,7 @@ import Education from './components/Education/Education';
 import Achievements from './components/Achievements/Achievements';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import Experience from './components/Experience/Experience';
 
 function App() {
   const [isFluid, setIsFluid] = useState(false);
@@ -36,10 +37,11 @@ function App() {
     <div className="App">
       <Header setActiveNavItem={setActiveNavItem} />
       <Intro isFluid={isFluid} />
+      <Experience isFluid={isFluid} />
+      <Achievements isFluid={isFluid} />
       <Skills isFluid={isFluid} />
       <Projects isFluid={isFluid} />
       <Education isFluid={isFluid} />
-      <Achievements isFluid={isFluid} />
       <Contact isFluid={isFluid} />
       <Footer />
     </div>

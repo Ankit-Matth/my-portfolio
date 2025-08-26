@@ -1,5 +1,5 @@
 #education {
-    margin-top: 3rem !important;
+    margin-top: 5rem !important;
 }
 
 #education > h1 {
@@ -34,6 +34,10 @@
 .courseName,
 .grades {
     font-size: 1.4rem;
+}
+
+.accordionBody {
+    text-align: justify;
 }
 
 @media screen and (max-width: 576px) {
