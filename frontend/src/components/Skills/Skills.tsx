@@ -20,8 +20,8 @@ const Skills: React.FC<SkillsProps> = ({ isFluid }) => {
           <p>
             <a href="https://drive.google.com/drive/folders/1XEY9ihwjkKuCjVpPRHKUDBeM-K9oX5iz?usp=drive_link" target="_blank" rel="noopener noreferrer" className='btn btn-secondary' style={{ marginRight: '15px' }}>
             Download Resume</a>
-            <a href="#projects" rel="noopener noreferrer" className='btn btn-secondary'>
-            View Projects</a>
+            <a href="mailto:ankitmatth101@gmail.com" rel="noopener noreferrer" className='btn btn-secondary'>
+            Get in Touch</a>
           </p>
         </Col>
         <Col md={6} sm={12} className='d-flex align-items-center justify-content-center' style={{ zIndex: 1, }}>

@@ -1,26 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.202d748c.css",
-    "main.js": "/static/js/main.b3f78bcd.js",
+    "main.css": "/static/css/main.c1446ec2.css",
+    "main.js": "/static/js/main.60d41122.js",
     "static/js/787.2dcca737.chunk.js": "/static/js/787.2dcca737.chunk.js",
-    "static/media/myResume.jpg": "/static/media/myResume.22b540f266402099f1df.jpg",
-    "static/media/personalDoctor.png": "/static/media/personalDoctor.5a614c9d16608715ee45.png",
-    "static/media/myPortfolio.png": "/static/media/myPortfolio.02a281e1a07d62a4dce0.png",
+    "static/media/gssoc_id_card.png": "/static/media/gssoc_id_card.f3ae8a69af1f92c523f1.png",
+    "static/media/gssoc_contributor_badge.png": "/static/media/gssoc_contributor_badge.64543f17f06ce90c3986.png",
     "static/media/myPic.jpg": "/static/media/myPic.a9915b121649b3e6f64e.jpg",
+    "static/media/gssoc_email.png": "/static/media/gssoc_email.c673f718e4f4a3a07ea3.png",
+    "static/media/personalDoctor.jpg": "/static/media/personalDoctor.6a77795667d01925a177.jpg",
+    "static/media/myPortfolio.jpg": "/static/media/myPortfolio.3ecd020d09fe8779edb0.jpg",
     "static/media/SD_Sr_Sec_School.png": "/static/media/SD_Sr_Sec_School.421a1ea20fb0ed07dc53.png",
+    "static/media/jobGenie.jpg": "/static/media/jobGenie.1da7a6023ac318b9e39e.jpg",
     "static/media/BRCM.png": "/static/media/BRCM.ccda413de699ef175ba9.png",
-    "static/media/toDoList.jpg": "/static/media/toDoList.62ddee7616ddef6d952e.jpg",
+    "static/media/toDoList.jpg": "/static/media/toDoList.8d4aeb4672432fb411bd.jpg",
+    "static/media/docsGPT.jpg": "/static/media/docsGPT.8ec64a0cab70d4e97e85.jpg",
     "static/media/Janta_High_School.png": "/static/media/Janta_High_School.485cfb2979440f9f61ed.png",
-    "static/media/ticTacToe.jpg": "/static/media/ticTacToe.c9b54eac9cf51feb18b5.jpg",
-    "static/media/mazeEscape.jpg": "/static/media/mazeEscape.40d77fb2c561d2fb4466.jpg",
-    "static/media/calculator.jpg": "/static/media/calculator.8b40b23fcfaf5e8c8c94.jpg",
+    "static/media/mazeEscape.jpg": "/static/media/mazeEscape.8f0c69bc0c5cf42a2a08.jpg",
+    "static/media/ticTacToe.jpg": "/static/media/ticTacToe.924a3eb5424e1be56138.jpg",
+    "static/media/calculator.jpg": "/static/media/calculator.687ddb2687f6205fc491.jpg",
     "index.html": "/index.html",
-    "main.202d748c.css.map": "/static/css/main.202d748c.css.map",
-    "main.b3f78bcd.js.map": "/static/js/main.b3f78bcd.js.map",
+    "main.c1446ec2.css.map": "/static/css/main.c1446ec2.css.map",
+    "main.60d41122.js.map": "/static/js/main.60d41122.js.map",
     "787.2dcca737.chunk.js.map": "/static/js/787.2dcca737.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.202d748c.css",
-    "static/js/main.b3f78bcd.js"
+    "static/css/main.c1446ec2.css",
+    "static/js/main.60d41122.js"
   ]
 }

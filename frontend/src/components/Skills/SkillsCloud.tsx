@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 interface Skill {
   img: string;
+  alt: string;
 }
 
 interface AnimatedSkill extends Skill {
@@ -14,39 +15,39 @@ interface AnimatedSkill extends Skill {
 }
 
 const skills: Skill[] = [
-  { img: "https://img.shields.io/badge/-JavaScript-000000?logo=javascript&logoColor=white" },
-  { img: "https://img.shields.io/badge/-C%20/%20C++-000000?logo=cplusplus&logoColor=white" },
-  { img: "https://img.shields.io/badge/-TypeScript-000000?logo=typescript&logoColor=white" },
-  { img: "https://img.shields.io/badge/-Python-000000?logo=python&logoColor=white" },
-  { img: "https://img.shields.io/badge/-HTML5-000000?logo=html5&logoColor=white" },
-  { img: "https://img.shields.io/badge/-CSS3-000000?logo=css&logoColor=white" },
-  { img: "https://img.shields.io/badge/-Bootstrap-000000?logo=bootstrap&logoColor=white" },
-  { img: "https://img.shields.io/badge/-TailwindCSS-000000?logo=tailwindcss&logoColor=white" },
-  { img: "https://img.shields.io/badge/-Markdown-000000?logo=markdown&logoColor=white" },
-  { img: "https://img.shields.io/badge/-React-000000?logo=react&logoColor=white" },
-  { img: "https://img.shields.io/badge/-Next.js-000000?logo=next.js&logoColor=white" },
-  { img: "https://img.shields.io/badge/-Redux-000000?logo=redux&logoColor=white" },
-  { img: "https://img.shields.io/badge/-Node.js-000000?logo=node.js&logoColor=white" },
-  { img: "https://img.shields.io/badge/-Express.js-000000?logo=express&logoColor=white" },
-  { img: "https://img.shields.io/badge/-Puppeteer-000000?logo=puppeteer&logoColor=white" },
-  { img: "https://img.shields.io/badge/-Socket.io-000000?logo=socket.io&logoColor=white" },
-  { img: "https://img.shields.io/badge/-MongoDB-000000?logo=mongodb&logoColor=white" },
-  { img: "https://img.shields.io/badge/-MySQL-000000?logo=mysql&logoColor=white" },
-  { img: "https://img.shields.io/badge/-VectorDB-000000?logo=databricks&logoColor=white" },
-  { img: "https://img.shields.io/badge/-Postman-000000?logo=postman&logoColor=white" },
-  { img: "https://img.shields.io/badge/-SQL-000000?logo=database&logoColor=white" },
-  { img: "https://img.shields.io/badge/-Docker-000000?logo=docker&logoColor=white" },
-  { img: "https://img.shields.io/badge/-Figma-000000?logo=figma&logoColor=white" },
-  { img: "https://img.shields.io/badge/-React%20Testing%20Library-000000?logo=testinglibrary&logoColor=white" },
-  { img: "https://img.shields.io/badge/-Jest-000000?logo=jest&logoColor=white" },
-  { img: "https://img.shields.io/badge/-Cypress-000000?logo=cypress&logoColor=white" },
-  { img: "https://img.shields.io/badge/-Vercel-000000?logo=vercel&logoColor=white" },
-  { img: "https://img.shields.io/badge/AWS-000000?logo=googlecloud&logoColor=white" },
-  { img: "https://img.shields.io/badge/-DSA-000000?logo=thealgorithms&logoColor=white" },
-  { img: "https://img.shields.io/badge/-OOPs-000000?logo=codecrafters&logoColor=white" },
-  { img: "https://img.shields.io/badge/-SDLC-000000?logoColor=white" },
-  { img: "https://img.shields.io/badge/-DBMS-000000?logo=databricks&logoColor=white" },
-  { img: "https://img.shields.io/badge/-Git-000000?logo=git&logoColor=white" },
+  { img: "https://img.shields.io/badge/-JavaScript-000000?logo=javascript&logoColor=white", alt: "Javascript" },
+  { img: "https://img.shields.io/badge/-C%20/%20C++-000000?logo=cplusplus&logoColor=white", alt: "C++" },
+  { img: "https://img.shields.io/badge/-TypeScript-000000?logo=typescript&logoColor=white", alt: "TypeScript" },
+  { img: "https://img.shields.io/badge/-Python-000000?logo=python&logoColor=white", alt: "Python" },
+  { img: "https://img.shields.io/badge/-HTML5-000000?logo=html5&logoColor=white", alt: "HTML" },
+  { img: "https://img.shields.io/badge/-CSS3-000000?logo=css&logoColor=white", alt: "CSS" },
+  { img: "https://img.shields.io/badge/-Bootstrap-000000?logo=bootstrap&logoColor=white", alt: "Bootstrap" },
+  { img: "https://img.shields.io/badge/-TailwindCSS-000000?logo=tailwindcss&logoColor=white", alt: "TailwindCSS" },
+  { img: "https://img.shields.io/badge/-Markdown-000000?logo=markdown&logoColor=white", alt: "Markdown" },
+  { img: "https://img.shields.io/badge/-React-000000?logo=react&logoColor=white", alt: "React" },
+  { img: "https://img.shields.io/badge/-Next.js-000000?logo=next.js&logoColor=white", alt: "Next.js" },
+  { img: "https://img.shields.io/badge/-Redux-000000?logo=redux&logoColor=white", alt: "Redux" },
+  { img: "https://img.shields.io/badge/-Node.js-000000?logo=node.js&logoColor=white", alt: "Node.js" },
+  { img: "https://img.shields.io/badge/-Express.js-000000?logo=express&logoColor=white", alt: "Express.js" },
+  { img: "https://img.shields.io/badge/-Puppeteer-000000?logo=puppeteer&logoColor=white", alt: "Puppeteer" },
+  { img: "https://img.shields.io/badge/-Socket.io-000000?logo=socket.io&logoColor=white", alt: "Socket.io" },
+  { img: "https://img.shields.io/badge/-MongoDB-000000?logo=mongodb&logoColor=white", alt: "MongoDB" },
+  { img: "https://img.shields.io/badge/-MySQL-000000?logo=mysql&logoColor=white", alt: "MySQL" },
+  { img: "https://img.shields.io/badge/-VectorDB-000000?logo=databricks&logoColor=white", alt: "VectorDB" },
+  { img: "https://img.shields.io/badge/-Postman-000000?logo=postman&logoColor=white", alt: "Postman" },
+  { img: "https://img.shields.io/badge/-SQL-000000?logo=database&logoColor=white", alt: "SQL" },
+  { img: "https://img.shields.io/badge/-Docker-000000?logo=docker&logoColor=white", alt: "Docker" },
+  { img: "https://img.shields.io/badge/-Figma-000000?logo=figma&logoColor=white", alt: "Figma" },
+  { img: "https://img.shields.io/badge/-React%20Testing%20Library-000000?logo=testinglibrary&logoColor=white", alt: "React Testing Library" },
+  { img: "https://img.shields.io/badge/-Jest-000000?logo=jest&logoColor=white", alt: "Jest" },
+  { img: "https://img.shields.io/badge/-Cypress-000000?logo=cypress&logoColor=white", alt: "Cypress" },
+  { img: "https://img.shields.io/badge/-Vercel-000000?logo=vercel&logoColor=white", alt: "Vercel" },
+  { img: "https://img.shields.io/badge/AWS-000000?logo=googlecloud&logoColor=white", alt: "AWS" },
+  { img: "https://img.shields.io/badge/-DSA-000000?logo=thealgorithms&logoColor=white", alt: "DSA" },
+  { img: "https://img.shields.io/badge/-OOPs-000000?logo=codecrafters&logoColor=white", alt: "OOPs" },
+  { img: "https://img.shields.io/badge/-SDLC-000000?logoColor=white", alt: "SDLC" },
+  { img: "https://img.shields.io/badge/-DBMS-000000?logo=databricks&logoColor=white", alt: "DBMS" },
+  { img: "https://img.shields.io/badge/-Git-000000?logo=git&logoColor=white", alt: "Git" },
 ];
 
 const fibonacciSphere = (samples: number, radius: number) => {
@@ -208,10 +209,10 @@ const SkillsCloud: React.FC = () => {
     lastPosRef.current = { x: e.clientX, y: e.clientY };
 
     // map drag delta to rotation speeds.
-    // tune factor to control sensitivity
+    // factor to control sensitivity
     const factor = 0.01;
-    const tx = clamp(dy * factor, -0.12, 0.12); // vertical → X rotation
-    const ty = clamp(dx * factor, -0.12, 0.12); // horizontal → Y rotation
+    const tx = clamp(-dy * factor, -0.12, 0.12); // vertical rotation
+    const ty = clamp(dx * factor, -0.12, 0.12); // horizontal rotation
     const tz = clamp((dx * dy) * 0.00002, -0.012, 0.012);
 
     targetSpeedRef.current = { x: tx, y: ty, z: tz };
@@ -228,7 +229,7 @@ const SkillsCloud: React.FC = () => {
       } catch {}
 
       const inertiaFactor = 28; 
-      const ivx = clamp(velRef.current.y * inertiaFactor, -0.12, 0.12);
+      const ivx = clamp(-velRef.current.y * inertiaFactor, -0.12, 0.12);
       const ivy = clamp(velRef.current.x * inertiaFactor, -0.12, 0.12);
 
       targetSpeedRef.current = { x: ivx, y: ivy, z: 0 };
@@ -298,7 +299,7 @@ const SkillsCloud: React.FC = () => {
           key={sk.id}
           src={sk.img}
           className="skill"
-          alt={`skill-${sk.id}`}
+          alt={sk.alt}
           draggable={false}
           onDragStart={(e) => e.preventDefault()}
           style={skillStyle(sk)}

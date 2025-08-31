@@ -59,3 +59,34 @@
   background: linear-gradient(90deg, #0056d2, #0041a8);
   transform: translateY(-2px);
 }
+
+
+@media screen and (max-width: 450px) {
+  .experience-card {
+    padding: 1.5rem;
+    margin: auto 1.5rem;
+  }
+
+  .experience-title {
+    font-size: 1.4rem;
+  }
+
+  .date {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .live-link-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .experience-images {
+    gap: 1.5rem;
+  }
+}

@@ -29,7 +29,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // Update document title based on activeNavItem
     document.title = `${activeNavItem || 'Intro'} | @AnkitMatth`;
   }, [activeNavItem]);
 
