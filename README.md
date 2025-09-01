@@ -6,8 +6,7 @@
 
 - **Live link** - https://ankit-matth-portfolio.vercel.app/ 
 
-
-https://github.com/Ankit-Matth/my-portfolio/assets/146843890/e460b3e9-2768-4300-8c66-ba8e3adc9761
+https://github.com/user-attachments/assets/6c4cc4fe-8651-4123-a84d-60475f261afc
 
 
 ## Technologies Used
@@ -17,3 +16,4 @@ https://github.com/Ankit-Matth/my-portfolio/assets/146843890/e460b3e9-2768-4300-
 3. Typescript Syntax Extension, React-Bootstrap
 
 Building this project felt like going on a coding adventure where each line of code taught me something new. I mainly concentrated on TypeScript, which helped me understand things like managing different types of events and components in React. Overall, this project wasn't just about writing code; it was a practical learning experience that really helped me grow as a web developer.
+
