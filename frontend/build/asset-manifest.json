@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.c1446ec2.css",
-    "main.js": "/static/js/main.60d41122.js",
+    "main.js": "/static/js/main.f3ccb488.js",
     "static/js/787.2dcca737.chunk.js": "/static/js/787.2dcca737.chunk.js",
     "static/media/gssoc_id_card.png": "/static/media/gssoc_id_card.f3ae8a69af1f92c523f1.png",
     "static/media/gssoc_contributor_badge.png": "/static/media/gssoc_contributor_badge.64543f17f06ce90c3986.png",
-    "static/media/myPic.jpg": "/static/media/myPic.a9915b121649b3e6f64e.jpg",
     "static/media/gssoc_email.png": "/static/media/gssoc_email.c673f718e4f4a3a07ea3.png",
     "static/media/personalDoctor.jpg": "/static/media/personalDoctor.6a77795667d01925a177.jpg",
+    "static/media/myPic.jpg": "/static/media/myPic.99ec680ffbc69b97900e.jpg",
     "static/media/myPortfolio.jpg": "/static/media/myPortfolio.3ecd020d09fe8779edb0.jpg",
     "static/media/SD_Sr_Sec_School.png": "/static/media/SD_Sr_Sec_School.421a1ea20fb0ed07dc53.png",
     "static/media/jobGenie.jpg": "/static/media/jobGenie.1da7a6023ac318b9e39e.jpg",
@@ -20,11 +20,11 @@
     "static/media/calculator.jpg": "/static/media/calculator.687ddb2687f6205fc491.jpg",
     "index.html": "/index.html",
     "main.c1446ec2.css.map": "/static/css/main.c1446ec2.css.map",
-    "main.60d41122.js.map": "/static/js/main.60d41122.js.map",
+    "main.f3ccb488.js.map": "/static/js/main.f3ccb488.js.map",
     "787.2dcca737.chunk.js.map": "/static/js/787.2dcca737.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c1446ec2.css",
-    "static/js/main.60d41122.js"
+    "static/js/main.f3ccb488.js"
   ]
 }
