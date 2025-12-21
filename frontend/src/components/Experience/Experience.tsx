@@ -1,19 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Experience.css";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import idCard from "../../images/experience/gssoc_id_card.png";
-import emailImg from "../../images/experience/gssoc_email.png";
-import badge from "../../images/experience/gssoc_contributor_badge.png";
+import meImg from "../../images/experience/me.jpg";
+import deskImg from "../../images/experience/desk.jpg";
+import officeImg from "../../images/experience/office.jpg";
 
 interface ExperienceProps {
   isFluid: boolean;
 }
 
 const Experience: React.FC<ExperienceProps> = ({ isFluid }) => {
+  const [fullscreenImg, setFullscreenImg] = useState<string | null>(null);
+
+  const openFullscreen = (imgSrc: string) => {
+    setFullscreenImg(imgSrc);
+  };
+
+  const closeFullscreen = () => {
+    setFullscreenImg(null);
+  };
+
   return (
     <Container
       id="experience"
@@ -24,30 +34,63 @@ const Experience: React.FC<ExperienceProps> = ({ isFluid }) => {
 
       <Card className="experience-card">
         <Card.Body>
-            <h2 className="experience-title">
-                GirlScript Summer of Code 2025 | Open Source Contributor
-            </h2>
-            <p className="date">Aug 2025 – Present</p>
-            <p className="description">
-                Selected as a contributor in a nationwide 3-month open-source program,
-                similar to Google Summer of Code. Actively applying my skills to add
-                features, fix bugs, and improve documentation in open-source projects
-                under GSSoC.
-            </p>
+          <h2 className="experience-title">
+            SquareOps Technologies | <i>Product Engineering Team </i>
+          </h2>
+          <p className="date">October 2025 – Present</p>
+          <p className="description">
+            Selected as a React Intern in the Product Engineering Team at SquareOps Technologies (Unitech Cyber Park, Gurugram). This is a stipend-based, work-from-office internship with a Pre-Placement Offer (PPO) opportunity.
+            <br></br>
+            <b>Tech Stack:</b> React.js, Cypress, Python, Django, MongoDB etc.
+          </p>
 
-            <Row className="experience-images">
-            <Col xs={12} md={4} className="d-flex justify-content-center">
-                <img src={idCard} alt="GSSoC ID Card" className="experience-img" />
+          <Row className="experience-images g-3">
+            <Col xs={12} md={4} className="d-flex align-items-center">
+              <img
+                src={meImg}
+                alt="Me"
+                className="experience-img experience-img-main"
+                onClick={() => openFullscreen(meImg)}
+                style={{ cursor: 'pointer' }}
+              />
             </Col>
-            <Col xs={12} md={4} className="d-flex justify-content-center">
-                <img src={emailImg} alt="GSSoC Email Confirmation" className="experience-img" />
+            <Col xs={12} md={8} className="d-flex flex-column gap-3">
+              <div className="experience-img-wrapper">
+                <img
+                  src={officeImg}
+                  alt="Office Cabin"
+                  className="experience-img"
+                  onClick={() => openFullscreen(officeImg)}
+                  style={{ cursor: 'pointer' }}
+                />
+              </div>
+              <div className="experience-img-wrapper">
+                <img
+                  src={deskImg}
+                  alt="Work Desk"
+                  className="experience-img"
+                  onClick={() => openFullscreen(deskImg)}
+                  style={{ cursor: 'pointer' }}
+                />
+              </div>
             </Col>
-            <Col xs={12} md={4} className="d-flex justify-content-center">
-                <img src={badge} alt="GSSoC Contributor Badge" className="experience-img" />
-            </Col>
-            </Row>
+          </Row>
         </Card.Body>
       </Card>
+
+      {fullscreenImg && (
+        <div className="fullscreen-overlay" onClick={closeFullscreen}>
+          <button className="close-button" onClick={closeFullscreen} aria-label="Close">
+            ×
+          </button>
+          <img
+            src={fullscreenImg}
+            alt="Fullscreen view"
+            className="fullscreen-img"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </Container>
   );
 };
