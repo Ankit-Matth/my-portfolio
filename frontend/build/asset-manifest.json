@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.c1446ec2.css",
-    "main.js": "/static/js/main.f3ccb488.js",
+    "main.css": "/static/css/main.d3fe0e1a.css",
+    "main.js": "/static/js/main.b681af0c.js",
     "static/js/787.2dcca737.chunk.js": "/static/js/787.2dcca737.chunk.js",
-    "static/media/gssoc_id_card.png": "/static/media/gssoc_id_card.f3ae8a69af1f92c523f1.png",
-    "static/media/gssoc_contributor_badge.png": "/static/media/gssoc_contributor_badge.64543f17f06ce90c3986.png",
-    "static/media/gssoc_email.png": "/static/media/gssoc_email.c673f718e4f4a3a07ea3.png",
+    "static/media/me.jpg": "/static/media/me.cfc98fe05daa7b5ad11e.jpg",
+    "static/media/desk.jpg": "/static/media/desk.54febac1a52abac596ec.jpg",
     "static/media/personalDoctor.jpg": "/static/media/personalDoctor.6a77795667d01925a177.jpg",
     "static/media/myPic.jpg": "/static/media/myPic.99ec680ffbc69b97900e.jpg",
     "static/media/myPortfolio.jpg": "/static/media/myPortfolio.3ecd020d09fe8779edb0.jpg",
@@ -18,13 +17,14 @@
     "static/media/mazeEscape.jpg": "/static/media/mazeEscape.8f0c69bc0c5cf42a2a08.jpg",
     "static/media/ticTacToe.jpg": "/static/media/ticTacToe.924a3eb5424e1be56138.jpg",
     "static/media/calculator.jpg": "/static/media/calculator.687ddb2687f6205fc491.jpg",
+    "static/media/office.jpg": "/static/media/office.48f60ddb2b9fccc21b09.jpg",
     "index.html": "/index.html",
-    "main.c1446ec2.css.map": "/static/css/main.c1446ec2.css.map",
-    "main.f3ccb488.js.map": "/static/js/main.f3ccb488.js.map",
+    "main.d3fe0e1a.css.map": "/static/css/main.d3fe0e1a.css.map",
+    "main.b681af0c.js.map": "/static/js/main.b681af0c.js.map",
     "787.2dcca737.chunk.js.map": "/static/js/787.2dcca737.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1446ec2.css",
-    "static/js/main.f3ccb488.js"
+    "static/css/main.d3fe0e1a.css",
+    "static/js/main.b681af0c.js"
   ]
 }
