@@ -30,19 +30,28 @@ const Experience: React.FC<ExperienceProps> = ({ isFluid }) => {
       fluid={isFluid}
       className={isFluid ? "px-5 mt-2" : "mt-2"}
     >
-      <h1>Relevant Experience</h1>
+      <h1>Experience</h1>
 
       <Card className="experience-card">
         <Card.Body>
-          <h2 className="experience-title">
-            SquareOps Technologies | <i>Product Engineering Team </i>
+          <h2 className="experience-title experience-title-row">
+            <span>
+              SquareOps Technologies | <i>Product Engineering Team </i>
+            </span>
+            <span className="internship-duration">(6-Month Internship)</span>
           </h2>
-          <p className="date">October 2025 – Present</p>
-          <p className="description">
-            Selected as a React Intern in the Product Engineering Team at SquareOps Technologies (Unitech Cyber Park, Gurugram). This is a stipend-based, work-from-office internship with a Pre-Placement Offer (PPO) opportunity.
-            <br></br>
-            <b>Tech Stack:</b> React.js, Cypress, Python, Django, MongoDB etc.
-          </p>
+          <p className="date">October 2025 – April 2026</p>
+          <ul className="description">
+            <li>
+              Contributed to the development of Atmosly (AI-Native Kubernetes Platform) as a React Intern, working from the Gurugram office (Unitech Cyber Park). Mainly added new features, fixed UI issues, and optimized responsiveness.
+            </li>
+            <li>
+              Built the entire end-to-end testing setup from scratch using Cypress. Introduced automated testing in the product lifecycle along with a custom reporting architecture for efficient debugging.
+            </li>
+            <li>
+              <b>Tech Stack:</b> React.js, Python, Django, MySQL, MongoDB, Next.js, Tailwind CSS etc.
+            </li>
+          </ul>
 
           <Row className="experience-images g-3">
             <Col xs={12} md={4} className="d-flex align-items-center">

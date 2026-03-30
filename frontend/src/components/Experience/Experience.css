@@ -25,8 +25,22 @@
   color: #222;
 }
 
+.experience-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.internship-duration {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6c757d;
+  white-space: nowrap;
+}
+
 .date {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-style: italic;
   color: #6c757d;
   margin-bottom: 1.2rem;
@@ -98,8 +112,17 @@
     font-size: 1.4rem;
   }
 
+  .experience-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .internship-duration {
+    font-size: 0.9rem;
+  }
+
   .date {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 

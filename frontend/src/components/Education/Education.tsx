@@ -24,8 +24,8 @@ const Education: React.FC<EducationProps> = ({ isFluid }) => {
                     <div className='col-8'>
                         <h3 className='instituteName'>BRCM College of Engineering and Technology, Bahal</h3>
                         <h4 className='courseName'>Bachelor of Technology in Computer Science Engineering</h4>
-                        <h5 className='startEndDates'>August 2021 - July 2025 </h5>
-                        <h6 className='grades'>Grade: Current CGPA - 8.86, (80.15%)</h6>
+                        <h5 className='startEndDates'>August 2021 - May 2025 </h5>
+                        <h6 className='grades'>Grade: 80.15% (CGPA - 8.86)</h6>
                     </div>
                 </Accordion.Header>
                 <Accordion.Body style={{textAlign: 'left'}}>
